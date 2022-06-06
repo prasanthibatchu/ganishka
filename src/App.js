@@ -10,6 +10,7 @@ import { Signin } from "./components/signin";
 import { UserContext, SnackContext } from "./components/context";
 import { Snackbar, Slide, Alert } from "@mui/material";
 import { Signout } from "./components/signout";
+import {Home} from './components/home'
 function App() {
   const [userProfile, setUserProfile] = useState(null);
   const [snack, setSnack] = useState({
@@ -54,12 +55,14 @@ function App() {
             {snack.message}
           </Alert>
         </Snackbar>
+       
         <UserContext.Provider value={{ userProfile, setUserProfile }}>
           <SnackContext.Provider value={{ snack, setSnack }}>
             <Router>
               <Header />
 
               <Routes>
+              <Route path="/" element={<Home />} />
                 <Route path="/cards" element={<Cards />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/signin" element={<Signin />} />
