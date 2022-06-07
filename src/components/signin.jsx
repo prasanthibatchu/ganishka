@@ -100,6 +100,7 @@ export const Signin = () => {
                   label="password"
                   variant="outlined"
                   name="pass"
+                  type="password"
                   value={user.pass}
                   error={err === 2 && true}
                   onChange={onChangeValue}

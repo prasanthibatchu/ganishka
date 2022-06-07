@@ -1,9 +1,14 @@
 import React from 'react'
 import {Grid,Card,CardHeader,CardMedia,CardContent,Typography,Avatar} from '@mui/material'
 import {blue} from '@mui/material/colors'
+ import {Caro} from './carousel'
 export const Home=()=>{
     return(
         <div>
+          <Caro />
+          <br />
+          <br />
+          <br />
         <h1>Hello Ganishka</h1>
         <Grid
         container

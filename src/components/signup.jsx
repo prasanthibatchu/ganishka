@@ -115,7 +115,7 @@ export const Signup=()=>{
         else if (user.checkbox === false){
             
             setSnack({
-                message:"plese agree terms and conditions",
+                message:"please agree terms and conditions",
                 type: "error",
                 open: true,
                 direction: "center",
@@ -226,10 +226,10 @@ export const Signup=()=>{
                         
                     <Grid item xs={6}>  
                     
-                        <TextField  label="password" variant="outlined" name='pass' value={user.pass} error={err ===7 && true} onChange={onChangeValue} />
+                        <TextField  label="password"  type="password" variant="outlined" name='pass' value={user.pass} error={err ===7 && true} onChange={onChangeValue} />
                     </Grid>
                     <Grid item xs={6}>
-                        <TextField  label="confirm password" variant="outlined" name='cpass' value={user.cpass} error={err ===8 && true} onChange={onChangeValue} />
+                        <TextField  label="confirm password"  type="password" variant="outlined" name='cpass' value={user.cpass} error={err ===8 && true} onChange={onChangeValue} />
                     </Grid>
                     </Grid>
                     </Grid>

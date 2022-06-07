@@ -1,0 +1,10 @@
+.carousel {
+    width:50%;
+    height: 500px;
+    margin: auto;
+    
+  }
+  img {
+    margin: auto;
+    border-radius: 15px;
+}
